@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Indie+Flower&family=Pacifico&family=Ubuntu&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-right-half {
+    @apply after:absolute after:w-0 after:h-1 after:bg-gradient-to-l after:from-sky-600 after:to-orange-400 after:bottom-0 after:right-1/2 after:transition-all after:ease-in-out hover:after:w-[70%] after:delay-[0.2s] after:duration-[1s];
+  }
+  .header-left-half {
+    @apply before:absolute before:w-0 before:h-1 before:bg-gradient-to-r before:from-violet-500 before:text-rose-500 before:bottom-0 before:left-1/2 before:transition-all before:ease-in-out hover:before:w-[70%] before:delay-[0.2s] before:duration-[1s];
+  }
+  .about-left-right {
+    @apply before:absolute before:bg-sky-400 before:w-6 before:h-[0.200rem] before:bottom-0 before:left-[50%]
+          after:absolute after:bg-sky-400 after:w-6 after:h-[0.200rem] after:bottom-0 after:right-[50%] group-hover:after:bg-white group-hover:before:bg-white;
+  }
+  .footer-left-half {
+    @apply before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-[50%] before:bg-orange-500;
+  }
+  .footer-link {
+    @apply inline-block no-underline rounded-md rounded-tl-2xl drop-shadow-lg bg-slate-200 px-2 py-1;
+  }
+  .footer-icon {
+    @apply group-hover:transition group-hover:scale-125 group-hover:rotate-[360deg] group-hover:ease-in-out group-hover:duration-[1s];
+  }
+}
